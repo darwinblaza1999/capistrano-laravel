@@ -41,21 +41,28 @@
 #
 # Global options
 # --------------
-#  set :ssh_options, {
-#    keys: %w(/home/user_name/.ssh/id_rsa),
-#    forward_agent: false,
-#    auth_methods: %w(password)
+#   set :ssh_options, {
+#    keys: %w(C:\Users\darwin/.ssh/id_rsa),
+#    forward_agent: TRUE,
+#     auth_methods: %w(publickey)
 #  }
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
-# server "example.com",
-#   user: "user_name",
-#   roles: %w{web app},
-#   ssh_options: {
-#     user: "user_name", # overrides user setting above
-#     keys: %w(/home/user_name/.ssh/id_rsa),
-#     forward_agent: false,
-#     auth_methods: %w(publickey password)
-#     # password: "please use keys"
+
+
 #   }
+
+  # # file created in step 5
+  # load './config/myconfig.rb'
+
+  # # project directory in server
+  # # set :deploy_to, '/welcome/'
+
+  # set :stage, :staging
+  # set :application, 'Laravel_capistrano'
+
+  # set :repo_url, "https://github.com/darwinblaza1999/capistrano-laravel.git"
+
+
+  

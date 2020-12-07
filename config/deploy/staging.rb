@@ -59,3 +59,17 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+
+        # file created in step 5
+        load './config/myconfig.rb'
+
+        # project directory in server
+        set :deploy_to, '/home/darwin/app-deployment/'
+        # set :shared_path, '/home/darwin/app-deployment/shared'
+        
+     
+        set :stage, :staging
+        set :application, 'Apps'
+     
+        set :repo_url, "https://github.com/darwinblaza1999/capistrano-laravel.git"
+     
